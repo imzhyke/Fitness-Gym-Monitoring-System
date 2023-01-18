@@ -8,7 +8,7 @@
      <div class="container mt-5">
       <div class="row">
          <div class="col-md-6 mx-auto">
-            <div class="card cardsss">
+            <div class="card ">
                <div class="card-body">
                   <div class="row">
                      <div class="col">
