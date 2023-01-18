@@ -19,8 +19,8 @@
     background-size: cover;
 }
 
-.nav-bg-color1 {
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(255, 178, 0));
+.nav-bg-color {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 178, 0));
 }
 
 .footerlinks {
