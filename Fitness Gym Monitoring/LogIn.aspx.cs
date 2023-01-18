@@ -11,7 +11,12 @@ namespace Fitness_Gym_Monitoring
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+  
+        }
 
+        protected void logInBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("admin_Dashboard.aspx");
         }
     }
 }

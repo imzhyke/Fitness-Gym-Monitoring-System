@@ -54,7 +54,7 @@
                         
                         <div class="form-group">
 
-                            <asp:Button ID="logInBtn" class="btn btn-warning rounded-pill btn-block btn-lg" runat="server" Text="LOG IN" /> 
+                            <asp:Button ID="logInBtn" OnClick="logInBtn_Click" class="btn btn-warning rounded-pill btn-block btn-lg" runat="server" Text="LOG IN" /> 
                             
                         </div>
                      </div>

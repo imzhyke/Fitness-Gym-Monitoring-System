@@ -30,7 +30,7 @@
                     <img height=50px" src="imgs/Logo.png" />
                     <b>Fitnes Gym Monitoring System</b></a>
                 <div class="d-flex">
-                    <asp:LinkButton class="nav-link btn btn-block btn-warning" ID="logIn" runat="server" OnClick="logIn_Click" Font-Bold="True" ForeColor="#1E2B4B"> LOGI IN <i class="fa fa-sign-out" aria-hidden="true"></i>  </asp:LinkButton>
+                    <asp:LinkButton class="nav-link btn btn-block btn-warning" ID="logIn" runat="server" OnClick="logIn_Click" Font-Bold="True" ForeColor="#1E2B4B"> LOG IN <i class="fa fa-sign-out" aria-hidden="true"></i>  </asp:LinkButton>
                 </div>
             </div>
         </nav>
