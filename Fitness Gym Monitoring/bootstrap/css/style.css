@@ -11,8 +11,16 @@
     background-size: cover;
 }
 
+.bg-landingpage2 {
+    background-image: url('../../imgs/MultiBG.jpg');
+    
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .nav-bg-color {
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(255, 178, 0));
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 178, 0));
 }
 
 .footerlinks {
@@ -33,17 +41,48 @@
 }
 
 .cardsss {
-    background-color: hsl(229, 0%, 100%, 1);
-    border-radius:1em;
+    background: rgba(0, 1, 255, 0.59);
+    border-radius:100px;
 }
 
-.registerbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
+
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
 }
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+
+

@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Fitness_Gym_Monitoring.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+   
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/style.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <script src="fontawesome/js/all.js"></script>
+    <script src="bootstrap/js/jquery-3.6.3.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bg-landingpage">
+    <form id="form1" runat="server">
+     
+        
+   <%--NavBar--%>
+    <nav class="navbar navbar-dark nav-bg-color ">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand">
+                    <img height=50px" src="imgs/Logo.png" />
+                    <b>Fitnes Gym Monitoring System</b></a>
+                <div class="d-flex">
+                    <button class="btn btn-warning btn-lg rounded-pill" type="submit">LOG IN</button>
+                </div>
+            </div>
+        </nav>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+       
+    </form>
+</body>
+</html>
