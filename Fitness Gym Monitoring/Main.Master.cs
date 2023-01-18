@@ -16,7 +16,7 @@ namespace Fitness_Gym_Monitoring
 
         protected void logIn_Click(object sender, EventArgs e)
         {
-            logIn.Visible = false;
+           
             Response.Redirect("LogIn.aspx");
         }
     }
