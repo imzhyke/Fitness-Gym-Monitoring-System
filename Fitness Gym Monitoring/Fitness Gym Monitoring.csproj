@@ -2129,6 +2129,7 @@
     <Content Include="fontawesome\svgs\solid\yen-sign.svg" />
     <Content Include="fontawesome\svgs\solid\yin-yang.svg" />
     <Content Include="fontawesome\svgs\solid\z.svg" />
+    <Content Include="imgs\BACK.png" />
     <Content Include="imgs\Logo2.png" />
     <Content Include="imgs\MultiBG.jpg" />
     <Content Include="imgs\UserLogInIcon.jpg" />
