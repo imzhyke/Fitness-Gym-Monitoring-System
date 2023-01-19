@@ -42,30 +42,12 @@ namespace Fitness_Gym_Monitoring
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// gridview control.
+        /// rptCustomers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl gridview;
-
-        /// <summary>
-        /// gridview_report control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gridview_report;
-
-        /// <summary>
-        /// dbStudents_Source control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource dbStudents_Source;
+        protected global::System.Web.UI.WebControls.Repeater rptCustomers;
     }
 }

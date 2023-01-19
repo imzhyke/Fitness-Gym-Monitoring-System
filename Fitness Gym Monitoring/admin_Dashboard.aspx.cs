@@ -16,7 +16,7 @@ namespace Fitness_Gym_Monitoring
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            gridview.Visible = true;
+            //gridview.Visible = true;
 
             using (var db = new MySqlConnection(SQLConnectionString))
             {
@@ -29,11 +29,16 @@ namespace Fitness_Gym_Monitoring
                     DataTable dt = new DataTable();
                     MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
                     sda.Fill(dt);
-                    gridview_report.DataSource = dt;
-                    gridview_report.DataBind();
+                    rptCustomers.DataSource = dt;
+                    rptCustomers.DataBind();
                     db.Close();
                 }
             }
+        }
+
+        protected void gridview_report_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -110,6 +110,7 @@
   <ItemGroup>
     <Content Include="admin_Dashboard.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\dataTables.bootstrap5.min.css" />
     <Content Include="bootstrap\css\style.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.6.3.slim.min.js" />
@@ -2177,6 +2178,7 @@
     <Content Include="imgs\gym-fitness-crossfit.jpg" />
     <Content Include="imgs\Hero.png" />
     <Content Include="imgs\Logo.png" />
+    <Content Include="jquery.dataTables.min.css" />
     <Content Include="LandingPage.aspx" />
     <Content Include="Landing_Page.aspx" />
     <Content Include="LogIn.aspx" />
