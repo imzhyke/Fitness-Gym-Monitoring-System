@@ -109,6 +109,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin_Dashboard.aspx" />
+    <Content Include="admin_ManageEmployee.aspx" />
+    <Content Include="admin_Setting.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\css\dataTables.bootstrap5.min.css" />
     <Content Include="bootstrap\css\style.css" />
@@ -2178,7 +2180,6 @@
     <Content Include="imgs\gym-fitness-crossfit.jpg" />
     <Content Include="imgs\Hero.png" />
     <Content Include="imgs\Logo.png" />
-    <Content Include="jquery.dataTables.min.css" />
     <Content Include="LandingPage.aspx" />
     <Content Include="Landing_Page.aspx" />
     <Content Include="LogIn.aspx" />
@@ -2192,6 +2193,20 @@
     </Compile>
     <Compile Include="admin_Dashboard.aspx.designer.cs">
       <DependentUpon>admin_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_ManageEmployee.aspx.cs">
+      <DependentUpon>admin_ManageEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_ManageEmployee.aspx.designer.cs">
+      <DependentUpon>admin_ManageEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_Setting.aspx.cs">
+      <DependentUpon>admin_Setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_Setting.aspx.designer.cs">
+      <DependentUpon>admin_Setting.aspx</DependentUpon>
     </Compile>
     <Compile Include="LandingPage.aspx.cs">
       <DependentUpon>LandingPage.aspx</DependentUpon>

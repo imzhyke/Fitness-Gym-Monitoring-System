@@ -1,14 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Multi.Master" AutoEventWireup="true" CodeBehind="admin_Dashboard.aspx.cs" Inherits="Fitness_Gym_Monitoring.admin_Dashboard" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">v
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Multi.Master" AutoEventWireup="true" CodeBehind="admin_ManageEmployee.aspx.cs" Inherits="Fitness_Gym_Monitoring.admin_ManageEmployee" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-    <link href="bootstrap/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+     <link href="bootstrap/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
 
-</asp:Content>  
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-   <asp:Label ID="Label3" runat="server" style="margin-left:300px; color:#FFC107;" Text ="DASHBOARD" Font-Bold="True" Font-Size="XX-Large"></asp:Label>
+      <asp:Label ID="Label3" runat="server" style="margin-left:300px; margin-top:-10; color:#FFC107;" Text ="MANAGE EMPLOYEE" Font-Bold="True" Font-Size="XX-Large"></asp:Label>
    
-    <div class="pl-5 col-8 " style="margin:auto">
+
+      <div class="pl-5 col-8 " style="margin:auto">
       
         <div class="row d-flex justify-content-around">
             <div class="col-3 card p-2">
@@ -46,6 +47,9 @@
                         <th>
                             Contact Title
                         </th>
+                        <th>
+
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -61,7 +65,12 @@
                 <td>
                     <asp:Label ID="lblEmail" runat="server" Text='<%# Eval("amt") %>' />
                 </td>
-            </tr>
+                <th >
+                    <center>
+                    <asp:LinkButton ID="editBtnEmp" OnClick="editBtnEmp_Click" class="btn btn-success" alt="Edit" runat="server"><i class="fa-solid fa-pen-to-square"></i></asp:LinkButton>
+                    <asp:LinkButton ID="delBtnEmp" class="btn btn-danger" alt="Delete" runat="server"><i class="fa-solid fa-trash"></i></asp:LinkButton>
+                        </center>
+                </th</tr>
         </ItemTemplate>
         <FooterTemplate>
             </tbody> </table>
@@ -84,4 +93,6 @@
             </div>    
         </div>
     </div>
+
+
 </asp:Content>

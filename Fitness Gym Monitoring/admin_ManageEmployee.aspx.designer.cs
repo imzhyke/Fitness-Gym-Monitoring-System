@@ -11,7 +11,7 @@ namespace Fitness_Gym_Monitoring
 {
 
 
-    public partial class admin_Dashboard
+    public partial class admin_ManageEmployee
     {
 
         /// <summary>
