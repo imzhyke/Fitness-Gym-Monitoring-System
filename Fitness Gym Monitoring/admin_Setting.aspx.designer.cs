@@ -15,40 +15,22 @@ namespace Fitness_Gym_Monitoring
     {
 
         /// <summary>
-        /// usrname control.
+        /// adminUsrLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usrname;
+        protected global::System.Web.UI.WebControls.TextBox adminUsrLbl;
 
         /// <summary>
-        /// lname control.
+        /// adminPassLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lname;
-
-        /// <summary>
-        /// fname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fname;
-
-        /// <summary>
-        /// pass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pass;
+        protected global::System.Web.UI.WebControls.TextBox adminPassLbl;
 
         /// <summary>
         /// editBtn control.
@@ -67,14 +49,5 @@ namespace Fitness_Gym_Monitoring
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button saveBtn;
-
-        /// <summary>
-        /// delBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button delBtn;
     }
 }
