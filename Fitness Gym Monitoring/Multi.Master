@@ -7,7 +7,7 @@
     <title></title>
 
 
-    
+
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="bootstrap/css/style.css" rel="stylesheet" />
     <link href="fontawesome/css/all.css" rel="stylesheet" />
@@ -24,84 +24,90 @@
     <form id="form1" runat="server">
 
         <!--Main Navigation-->
-<header>
-  <!-- Sidebar -->
-  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
-    <div class="position-sticky">
-      <div class="list-group list-group-flush mx-3 mt-4">
-
-        
-      
-          <h5>Fitness Gym Monitoring System</h5>
-       
-
-         <asp:LinkButton class="nav-link btn btn-block" ID="dashBtn" runat="server" BackColor="#CCCCCC" Onclick="dashBtn_Click" > <i class="fa-solid fa-bars"></i> DASHBOARD  </asp:LinkButton>
-         <asp:LinkButton class="nav-link btn btn-block" ID="mngEmpBtn" runat="server" Onclick="mngEmpBtn_Click" ><i class="fa-solid fa-people-group"></i> MANAGE EMPLOYEE</asp:LinkButton>
-         <asp:LinkButton class="nav-link btn btn-block " ID="accStBtn" runat="server" Onclick="accStBtn_Click" ><i class="fa-solid fa-gear"></i> ACCOUNT SETTING </asp:LinkButton>
-
-      
-      </div>
-    </div>
-  </nav>
-  <!-- Sidebar -->
-
-  <!-- Navbar -->
-  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-
-      <!-- Brand -->
-      <a class="navbar-brand" href="#">
-       <img class="mx-5" height=50px" src="imgs/Logo2.png" />
-              
-      </a>
+        <header>
+            <!-- Sidebar -->
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush mx-3 mt-4">
 
 
-      <!-- Right links -->
-      <ul class="navbar-nav ms-auto d-flex flex-row">
+
+                        <h5>Fitness Gym Monitoring System</h5>
+
+                        <!--Admin Menu-->
+                        <asp:LinkButton class="nav-link btn btn-block" ID="dashBtnAdmin" runat="server" BackColor="#CCCCCC" OnClick="dashBtnAdmin_Click"> <i class="fa-solid fa-bars"></i> DASHBOARD  </asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block" ID="mngEmpBtnAdmin" runat="server" OnClick="mngEmpBtnAdmin_Click"><i class="fa-solid fa-people-group"></i> MANAGE EMPLOYEE</asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block " ID="accStBtnAdmin" runat="server" OnClick="accStBtnAdmin_Click"><i class="fa-solid fa-gear"></i> ACCOUNT SETTING </asp:LinkButton>
+
+                        <!--Employee Navigation-->
+                        <asp:LinkButton class="nav-link btn btn-block" ID="dashBtnEmp" runat="server" BackColor="#CCCCCC" > <i class="fa-solid fa-bars"></i> DASHBOARD  </asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block" ID="clientBtnEmp" runat="server" ><i class="fa-solid fa-people-group"></i> MANAGE CLIENTS</asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block " ID="histBtnEmp" runat="server" ><i class="fa-sharp fa-solid fa-clock-rotate-left"></i> HISTORY </asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block " ID="membrBtnEmp" runat="server" ><i class="fa-solid fa-crown"></i> MEMBERSHIP </asp:LinkButton>
 
 
-            <!-- Avatar -->
-        <li class="nav-item  d-flex align-items-center">
-         
-            <img
-              src="imgs/UserLogInIcon.jpg"
-              class="rounded-circle border border-succes"
-              height="40"
-              alt="Avatar"
-              loading="lazy"
-            />
-         
 
-        </li>
-        <li class="nav-item mr-5">    
-                <asp:LinkButton class="nav-link" ID="empLogged" runat="server" Font-Bold="True" ForeColor="White">ADMIN</asp:LinkButton>
-        </li>
+                    </div>
+                </div>
+            </nav>
+            <!-- Sidebar -->
+
+            <!-- Navbar -->
+            <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+                    <!-- Toggle button -->
+
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#">
+                        <img class="mx-5" height="50px" src="imgs/Logo2.png" />
+
+                    </a>
 
 
-        <!-- Icon -->
-        <li class="nav-item">
-            <asp:LinkButton class="nav-link btn btn-block btn-warning" ID="adminLogBtn" runat="server" Font-Bold="True" ForeColor="#1E2B4B"> LOG OUT <i class="fa fa-sign-out" aria-hidden="true"></i>  </asp:LinkButton>
-        
-        </li>
-      
-      </ul>
-    </div>
-    <!-- Container wrapper -->
-  </nav>
-  <!-- Navbar -->
-</header>
-<!--Main Navigation-->
+                    <!-- Right links -->
+                    <ul class="navbar-nav ms-auto d-flex flex-row">
 
-<!--Main layout-->
-<main style="margin-top: 58px;">
-  <div class="container pt-4"></div>
-</main>
-        
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-       
+
+                        <!-- Avatar -->
+                        <li class="nav-item  d-flex align-items-center">
+
+                            <img
+                                src="imgs/UserLogInIcon.jpg"
+                                class="rounded-circle border border-succes"
+                                height="40"
+                                alt="Avatar"
+                                loading="lazy" />
+
+
+                        </li>
+                        <li class="nav-item mr-5">
+                            <asp:LinkButton class="nav-link" ID="empLogged" runat="server" Font-Bold="True" ForeColor="White">ADMIN</asp:LinkButton>
+                        </li>
+
+
+                        <!-- Icon -->
+                        <li class="nav-item">
+                            <asp:LinkButton class="nav-link btn btn-block btn-warning" ID="adminLogBtn" runat="server" Font-Bold="True" ForeColor="#1E2B4B"> LOG OUT <i class="fa fa-sign-out" aria-hidden="true"></i>  </asp:LinkButton>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Container wrapper -->
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--Main Navigation-->
+
+        <!--Main layout-->
+        <main style="margin-top: 58px;">
+            <div class="container pt-4"></div>
+        </main>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
     </form>
 </body>
 </html>
