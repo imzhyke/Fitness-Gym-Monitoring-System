@@ -24,31 +24,31 @@ namespace Fitness_Gym_Monitoring
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// empNumLbl control.
+        /// empDisplayTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label empNumLbl;
+        protected global::System.Web.UI.WebControls.Label empDisplayTotal;
 
         /// <summary>
-        /// Label1 control.
+        /// memDisplayTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label memDisplayTotal;
 
         /// <summary>
-        /// Label2 control.
+        /// clietntsDisplayTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label clietntsDisplayTotal;
 
         /// <summary>
         /// rptCustomers control.

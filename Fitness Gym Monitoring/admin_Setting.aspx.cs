@@ -17,6 +17,9 @@ namespace Fitness_Gym_Monitoring
 
         protected void Page_Load(object sender, EventArgs e)
         {
+           //Temporary
+            Session["role"] = "admin";
+
             saveBtn.Visible= false;
 
 
@@ -90,8 +93,7 @@ namespace Fitness_Gym_Monitoring
                     if (ctr >= 1)
                     {
                         ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
-                               "swal({\r\n    title: \"UPDATED!\",\r\n    text: \"Updated successfuly!\",\r\n    icon: \"success\",\r\n    type: \"success\"\r\n}).then(function() {\r\n    window.location = \"Prop_DashBoard.aspx\";\r\n})", true);
-
+                               "swal({\r\n    title: \"UPDATED!\",\r\n    text: \"Updated successfuly!\",\r\n    icon: \"success\",\r\n    type: \"success\"\r\n}).then(function() {\r\n    window.location = \"admin_Dashboard.aspxx\";\r\n})", true); 
                     }
 
                     connDB.Close();

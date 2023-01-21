@@ -33,49 +33,85 @@ namespace Fitness_Gym_Monitoring
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// dashBtn control.
+        /// dashBtnAdmin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton dashBtn;
+        protected global::System.Web.UI.WebControls.LinkButton dashBtnAdmin;
 
         /// <summary>
-        /// mngEmpBtn control.
+        /// mngEmpBtnAdmin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton mngEmpBtn;
+        protected global::System.Web.UI.WebControls.LinkButton mngEmpBtnAdmin;
 
         /// <summary>
-        /// accStBtn control.
+        /// accStBtnAdmin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton accStBtn;
+        protected global::System.Web.UI.WebControls.LinkButton accStBtnAdmin;
 
         /// <summary>
-        /// empLogged control.
+        /// dashBtnEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton empLogged;
+        protected global::System.Web.UI.WebControls.LinkButton dashBtnEmp;
 
         /// <summary>
-        /// adminLogBtn control.
+        /// clientBtnEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton adminLogBtn;
+        protected global::System.Web.UI.WebControls.LinkButton clientBtnEmp;
+
+        /// <summary>
+        /// histBtnEmp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton histBtnEmp;
+
+        /// <summary>
+        /// membrBtnEmp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton membrBtnEmp;
+
+        /// <summary>
+        /// lblLoggedIn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lblLoggedIn;
+
+        /// <summary>
+        /// btnLogOut control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnLogOut;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

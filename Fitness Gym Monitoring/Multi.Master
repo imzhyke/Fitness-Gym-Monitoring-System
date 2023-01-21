@@ -6,12 +6,11 @@
 <head runat="server">
     <title></title>
 
-
-
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="bootstrap/css/style.css" rel="stylesheet" />
     <link href="fontawesome/css/all.css" rel="stylesheet" />
 
+    <script src="sweetalert/sweetalert2@11.js"></script>
     <script src="fontawesome/js/all.js"></script>
     <script src="bootstrap/js/jquery-3.6.3.slim.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
@@ -32,18 +31,18 @@
 
 
 
-                        <h5>Fitness Gym Monitoring System</h5>
+                        <h5 class="text-center">Fitness Gym Monitoring System</h5>
 
                         <!--Admin Menu-->
-                        <asp:LinkButton class="nav-link btn btn-block" ID="dashBtnAdmin" runat="server" BackColor="#CCCCCC" OnClick="dashBtnAdmin_Click"> <i class="fa-solid fa-bars"></i> DASHBOARD  </asp:LinkButton>
-                        <asp:LinkButton class="nav-link btn btn-block" ID="mngEmpBtnAdmin" runat="server" OnClick="mngEmpBtnAdmin_Click"><i class="fa-solid fa-people-group"></i> MANAGE EMPLOYEE</asp:LinkButton>
-                        <asp:LinkButton class="nav-link btn btn-block " ID="accStBtnAdmin" runat="server" OnClick="accStBtnAdmin_Click"><i class="fa-solid fa-gear"></i> ACCOUNT SETTING </asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block text-left" ID="dashBtnAdmin" runat="server"  OnClick="dashBtnAdmin_Click"> <i class="fa-solid fa-bars"></i> DASHBOARD  </asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block text-left" ID="mngEmpBtnAdmin" runat="server" OnClick="mngEmpBtnAdmin_Click"><i class="fa-solid fa-people-group"></i> MANAGE EMPLOYEE</asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block text-left" ID="accStBtnAdmin" runat="server" OnClick="accStBtnAdmin_Click"><i class="fa-solid fa-gear"></i> ACCOUNT SETTING </asp:LinkButton>
 
                         <!--Employee Navigation-->
-                        <asp:LinkButton class="nav-link btn btn-block" ID="dashBtnEmp" runat="server" BackColor="#CCCCCC" > <i class="fa-solid fa-bars"></i> DASHBOARD  </asp:LinkButton>
-                        <asp:LinkButton class="nav-link btn btn-block" ID="clientBtnEmp" runat="server" ><i class="fa-solid fa-people-group"></i> MANAGE CLIENTS</asp:LinkButton>
-                        <asp:LinkButton class="nav-link btn btn-block " ID="histBtnEmp" runat="server" ><i class="fa-sharp fa-solid fa-clock-rotate-left"></i> HISTORY </asp:LinkButton>
-                        <asp:LinkButton class="nav-link btn btn-block " ID="membrBtnEmp" runat="server" ><i class="fa-solid fa-crown"></i> MEMBERSHIP </asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block text-left" ID="dashBtnEmp" OnClick="dashBtnEmp_Click" runat="server"> <i class="fa-solid fa-bars"></i> DASHBOARD  </asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block text-left" ID="clientBtnEmp" OnClick="clientBtnEmp_Click" runat="server" ><i class="fa-solid fa-people-group"></i> MANAGE CLIENTS</asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block text-left" ID="histBtnEmp" OnClick="histBtnEmp_Click" runat="server" ><i class="fa-solid fa-clock-rotate-left"></i> HISTORY </asp:LinkButton>
+                        <asp:LinkButton class="nav-link btn btn-block text-left" ID="membrBtnEmp" OnClick="membrBtnEmp_Click" runat="server" ><i class="fa-solid fa-crown"></i> MEMBERSHIP </asp:LinkButton>
 
 
 
@@ -56,7 +55,7 @@
             <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <!-- Container wrapper -->
                 <div class="container-fluid">
-                    <!-- Toggle button -->
+
 
                     <!-- Brand -->
                     <a class="navbar-brand" href="#">
@@ -82,14 +81,13 @@
 
                         </li>
                         <li class="nav-item mr-5">
-                            <asp:LinkButton class="nav-link" ID="empLogged" runat="server" Font-Bold="True" ForeColor="White">ADMIN</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="lblLoggedIn" runat="server" Font-Bold="True" ForeColor="White">ADMIN</asp:LinkButton>
                         </li>
 
 
                         <!-- Icon -->
                         <li class="nav-item">
-                            <asp:LinkButton class="nav-link btn btn-block btn-warning" ID="adminLogBtn" runat="server" Font-Bold="True" ForeColor="#1E2B4B"> LOG OUT <i class="fa fa-sign-out" aria-hidden="true"></i>  </asp:LinkButton>
-
+                            <asp:LinkButton class="nav-link btn btn-block btn-warning" ID="btnLogOut" runat="server" Font-Bold="True" OnClick="BtnLogOut_Click" ForeColor="#1E2B4B"> LOG OUT <i class="fa fa-sign-out" aria-hidden="true"></i>  </asp:LinkButton>
                         </li>
 
                     </ul>

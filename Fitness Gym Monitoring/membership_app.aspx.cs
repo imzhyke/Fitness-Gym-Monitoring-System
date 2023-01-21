@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Fitness_Gym_Monitoring
 {
-    public partial class Landing_Page : System.Web.UI.Page
+    public partial class membership_app : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

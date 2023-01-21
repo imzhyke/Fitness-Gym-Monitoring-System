@@ -7,22 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace Fitness_Gym_Monitoring
 {
-    public partial class Main : System.Web.UI.MasterPage
+    public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            //if (string.IsNullOrEmpty(Session["role"] as string))
-            //{
-            //  
-            //}
-
-
         }
 
-        protected void LogInBtn_Click(object sender, EventArgs e)
+        protected void Timer1_Tick(object sender, EventArgs e)
         {
-            Response.Redirect("LogIn.aspx");
+
         }
     }
 }

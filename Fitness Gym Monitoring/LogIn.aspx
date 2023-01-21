@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="LogIn.aspx.cs" Inherits="Fitness_Gym_Monitoring.LogIn" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
+    <script src="sweetalert/sweetalert2@11.js"></script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -14,11 +15,10 @@
                             <img src="imgs/BACK.png" width="30px"/>
                     </a>
 
-
                   <div class="row">
                      <div class="col">
                         <center>
-                            <img height="150px" src="imgs/UserLogInIcon.jpg" />
+                            <img height="150px" class="rounded-circle" src="imgs/UserLogInIcon.jpg" />
                         </center>
                      </div>
                   </div>

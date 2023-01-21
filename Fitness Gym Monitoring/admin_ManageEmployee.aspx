@@ -6,91 +6,76 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-      <asp:Label ID="Label3" runat="server" style="margin-left:300px; margin-top:-10; color:#FFC107;" Text ="MANAGE EMPLOYEE" Font-Bold="True" Font-Size="XX-Large"></asp:Label>
+      <asp:Label ID="Label3" runat="server" style="margin-left:300px; color:#FFC107;" Text ="MANAGE EMPLOYEE" Font-Bold="True" Font-Size="XX-Large"></asp:Label>
    
 
-      <div class="pl-5 col-8 " style="margin:auto">
-      
-        <div class="row d-flex justify-content-around">
-            <div class="col-3 card p-2">
-                <p>Employee</p>
-                <asp:Label ID="empNumLbl" CssClass="m-auto" runat="server" Text="3" Font-Size="30px" Font-Bold="True"></asp:Label>
+ <div class="container-fluid d-flex justify-content-center">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                   
+                    <div class="row">
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="form-group">
+                                <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Seach Employee Username" ></asp:TextBox>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="form-group">
+
+                                 <asp:Button ID="Button1" CssClass="form-control btn btn btn-block btn-info" OnClick="editBtn_Click" runat="server" Text="Edit" />
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg">
+                            <label>Contact Number</label>
+                            <div class="form-group">
+                                <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Contact Number" Enabled="False"></asp:TextBox>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <hr>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg">
+                            <label>Admin Username</label>
+                            <div class="form-group">
+                                <asp:TextBox CssClass="form-control" ID="adminUsrLbl" runat="server" placeholder="Username" Enabled="False"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <label>Admin Password</label>
+                            <div class="form-group">
+                                <asp:TextBox CssClass="form-control" ID="adminPassLbl" runat="server" placeholder="Password" Enabled="False"></asp:TextBox>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-12 mx-auto">
+                            <asp:Button ID="editBtn" class="btn btn-lg btn-block btn-success" OnClick="editBtn_Click" runat="server" Text="Edit" />
+                        </div>
+
+                        <div class="col-12">
+                            <asp:Button ID="saveBtn" class="btn btn-lg btn-block btn-danger" runat="server" OnClick="saveBtn_Click" Text="Save" />
+                        </div>
+                    </div>
+                </div>
             </div>
-           
-            <div class="col-3 card p-2">
-                <p>Membership</p>
-                <asp:Label ID="Label1" CssClass="m-auto" runat="server" Text="3" Font-Size="30px" Font-Bold="True"></asp:Label>
-            </div>
 
-            <div class="col-3 card p-2">
-                <p>Clients</p>
-                <asp:Label ID="Label2" CssClass="m-auto" runat="server" Text="3" Font-Size="30px" Font-Bold="True"></asp:Label>
-            </div>
-        </div>
-
-
-        <div class="row">
-
-       <div class="col-lg">
-           <div class="card p-2 my-2">
-    <asp:Repeater ID="rptCustomers" runat="server">
-        <HeaderTemplate>
-            <table id="example" class="table table-striped" cellspacing="" width="100%">
-                <thead>
-                    <tr>
-                        <th>
-                            Customer ID
-                        </th>
-                        <th>
-                            Contact Name
-                        </th>
-                        <th>
-                            Contact Title
-                        </th>
-                        <th>
-
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-        </HeaderTemplate>
-        <ItemTemplate>
-            <tr>
-                <td>
-                    <asp:Label ID="lblFirstname" runat="server" Text='<%# Eval("CNAME") %>' />
-                </td>
-                <td>
-                    <asp:Label ID="lblLastname" runat="server" Text='<%# Eval("product") %>' />
-                </td>
-                <td>
-                    <asp:Label ID="lblEmail" runat="server" Text='<%# Eval("amt") %>' />
-                </td>
-                <th >
-                    <center>
-                    <asp:LinkButton ID="editBtnEmp" OnClick="editBtnEmp_Click" class="btn btn-success" alt="Edit" runat="server"><i class="fa-solid fa-pen-to-square"></i></asp:LinkButton>
-                    <asp:LinkButton ID="delBtnEmp" class="btn btn-danger" alt="Delete" runat="server"><i class="fa-solid fa-trash"></i></asp:LinkButton>
-                        </center>
-                </th</tr>
-        </ItemTemplate>
-        <FooterTemplate>
-            </tbody> </table>
-        </FooterTemplate>
-    </asp:Repeater>
-</div>
-<div>
-    <script src="datatables/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap4.min.js"></script>
-   
-    <script type="text/javascript">
-      
-        $(document).ready(function () {
-            $('#example').DataTable();
-        });
-    </script>
-</div>
-            </div>    
+            <br>
         </div>
     </div>
 

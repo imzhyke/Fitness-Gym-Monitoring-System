@@ -30,7 +30,9 @@
                     <img height=50px" src="imgs/Logo.png" />
                     <b>Fitnes Gym Monitoring System</b></a>
                 <div class="d-flex">
-                    <button class="btn btn-warning btn-lg rounded-pill" type="submit">LOG IN</button>
+
+                    <asp:LinkButton class="btn btn-warning btn-lg rounded-pill" ID="LogInBtn" type="submit" runat="server" OnClick="LogInBtn_Click">LOG IN</asp:LinkButton>
+                    
                 </div>
             </div>
         </nav>
