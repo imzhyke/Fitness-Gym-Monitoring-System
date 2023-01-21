@@ -16,7 +16,7 @@ namespace Fitness_Gym_Monitoring
            
         }
 
-        protected void dashBtn_Click(object sender, EventArgs e)
+        protected void dashBtnAdmin_Click(object sender, EventArgs e)
         {
             string hex = "#CCCCCC";
             Color gry = System.Drawing.ColorTranslator.FromHtml(hex);
@@ -38,12 +38,10 @@ namespace Fitness_Gym_Monitoring
 
         protected void accStBtnAdmin_Click(object sender, EventArgs e)
         {
-            string hex = "#CCCCCC";
-            Color gry = System.Drawing.ColorTranslator.FromHtml(hex);
 
-            dashBtn.BackColor = Color.White;
-            mngEmpBtn.BackColor = Color.White;
-            accStBtn.BackColor = gry;
+            dashBtnAdmin.BackColor = Color.White;
+            mngEmpBtnAdmin.BackColor = Color.White;
+            accStBtnAdmin.BackColor = gry;
         }
     }
 }

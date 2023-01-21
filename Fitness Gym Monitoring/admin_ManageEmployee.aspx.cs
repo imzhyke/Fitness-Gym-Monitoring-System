@@ -35,26 +35,11 @@ namespace Fitness_Gym_Monitoring
                     rptCustomers.DataBind();
                     db.Close();
                 }
-            }
-
         }
-
-        protected void EditBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void SaveBtn_Click(object sender, EventArgs e)
-        {
-
 
         }
 
 
-        protected void editBtnEmp_Click(object sender, EventArgs e)
-        {
-
-        }
     }
    
 }
