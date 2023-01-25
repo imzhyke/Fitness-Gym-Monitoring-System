@@ -80,7 +80,7 @@ namespace Fitness_Gym_Monitoring
                                 Session["name"] = rd2["EMP_FNAME"].ToString();
                                 Session["role"] = "employee";
                                 ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
-                               "swal({\r\n    title: \"SUCCESS\",\r\n    text: \"Logged in successfuly!\",\r\n    icon: \"success\",\r\n timer: \"1500\",\r\n buttons: false,\r\n   type: \"success\"\r\n}).then(function() {\r\n    window.location = \"admin_Dashboard.aspx\";\r\n})", true);
+                               "swal({\r\n    title: \"SUCCESS\",\r\n    text: \"Logged in successfuly!\",\r\n    icon: \"success\",\r\n timer: \"1500\",\r\n buttons: false,\r\n   type: \"success\"\r\n}).then(function() {\r\n    window.location = \"emp_DashBoard.aspx\";\r\n})", true);
                                 rd2.Close();
 
                             }

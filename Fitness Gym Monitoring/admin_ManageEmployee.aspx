@@ -10,53 +10,63 @@
    
 
  <div class="container-fluid d-flex justify-content-center">
-        <div class="col-6">
+        <div class="col-4">
             <div class="card">
                 <div class="card-body">
                    
                     <div class="row">
                     </div>
 
-
                     <div class="row">
-                        <div class="col-9">
+                        <div class="col-6">
                             <div class="form-group">
-                                <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Seach Employee Username" ></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="searchTxtBox" runat="server" placeholder="Username" ></asp:TextBox>
                             </div>
                         </div>
 
                         <div class="col-3">
                             <div class="form-group">
-
-                                 <asp:Button ID="Button1" CssClass="form-control btn btn btn-block btn-info" OnClick="editBtn_Click" runat="server" Text="Edit" />
+                                 <asp:Button ID="empBtnSearch" CssClass="form-control btn btn btn-block btn-info" OnClick="empBtnSearch_Click" runat="server" Text="Search" />
                                
                             </div>
-                        </div>
+                        </div>  
+
+                        <div class="col-3">
+                            <div class="form-group">
+                                 <asp:Button ID="empAddd" CssClass="form-control btn btn btn-block btn-warning" OnClick="empBtnAdd_Click" runat="server" Text="Add" />
+                               
+                            </div>
+                        </div>  
                     </div>
 
                     <div class="row">
                         <div class="col-lg">
-                            <label>Contact Number</label>
                             <div class="form-group">
-                                <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Contact Number" Enabled="False"></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="fnameEmp" runat="server" placeholder="First Name" Enabled="False"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                           
+                            <div class="form-group">
+                                <asp:TextBox CssClass="form-control" ID="lnameEmp" runat="server" placeholder="Last Name" Enabled="False"></asp:TextBox>
                             </div>
                         </div>
                     </div>
+                 
+                            <div class="form-group">
+                                <asp:TextBox CssClass="form-control" ID="contactEmp" runat="server" placeholder="Contact Number" Enabled="False"></asp:TextBox>
+                            </div>
+                     
                     <div class="col">
                         <hr>
                     </div>
 
                     <div class="row">
+
                         <div class="col-lg">
-                            <label>Admin Username</label>
+                            <label> Password</label>
                             <div class="form-group">
-                                <asp:TextBox CssClass="form-control" ID="adminUsrLbl" runat="server" placeholder="Username" Enabled="False"></asp:TextBox>
-                            </div>
-                        </div>
-                        <div class="col-lg">
-                            <label>Admin Password</label>
-                            <div class="form-group">
-                                <asp:TextBox CssClass="form-control" ID="adminPassLbl" runat="server" placeholder="Password" Enabled="False"></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="passEmp" runat="server" placeholder="Password" Enabled="False"></asp:TextBox>
                             </div>
                         </div>
                     </div>
@@ -65,11 +75,12 @@
 
                     <div class="row">
                         <div class="col-12 mx-auto">
-                            <asp:Button ID="editBtn" class="btn btn-lg btn-block btn-success" OnClick="editBtn_Click" runat="server" Text="Edit" />
+                            <asp:Button ID="editBtn" class="btn btn-lg btn-block btn-success" OnClick="editBtn_Click" Visible="false" runat="server" Text="Edit" />
                         </div>
 
                         <div class="col-12">
-                            <asp:Button ID="saveBtn" class="btn btn-lg btn-block btn-danger" runat="server" OnClick="saveBtn_Click" Text="Save" />
+                            <asp:Button ID="saveBtn" class="btn btn-lg btn-block btn-danger" runat="server" Visible="false" OnClick="saveBtn_Click" Text="Save" />
+                             <asp:Button ID="submitBtn" class="btn btn-lg btn-block btn-danger" runat="server" Visible="false" OnClick="submitBtn_Click" Text="Submit" />
                         </div>
                     </div>
                 </div>

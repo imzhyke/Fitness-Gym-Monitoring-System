@@ -8,7 +8,6 @@
             <div class="col-6 mt-5">
                 <img height="500px" src="imgs/Hero.png" />
             </div>
-        </div> 
-
+        <%--</div>--%> 
 
 </asp:Content>

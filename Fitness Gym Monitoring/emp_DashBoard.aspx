@@ -17,7 +17,7 @@
                 <asp:Label ID="empNumLbl" CssClass="m-auto" runat="server" Text="3" Font-Size="30px" Font-Bold="True"></asp:Label>
             </div>
            
-            <div class="col-3 card p-2">
+            <div class="col-3 card p-2">    
                 <p>Membership</p>
                 <asp:Label ID="Label1" CssClass="m-auto" runat="server" Text="3" Font-Size="30px" Font-Bold="True"></asp:Label>
             </div>
@@ -41,10 +41,10 @@
                             Client Name
                         </th>
                         <th>
-                            Time Spent
+                            Time 
                         </th>
                         <th>
-                            Time
+                            Date
                         </th>
                         <th>
 
@@ -55,14 +55,16 @@
         </HeaderTemplate>
         <ItemTemplate>
             <tr>
-                <td>
-                    <asp:Label ID="lblFirstname" runat="server" Text='<%# Eval("CNAME") %>' />
+                 <td>
+                    <asp:Label ID="lblFirstname" runat="server" Text='<%# Eval("CUST_FNAME") %>  ' />
+                    <asp:Label ID="lblLastname" runat="server" Text='<%# Eval("CUST_LNAME") %>  ' />
+                </td>
+                <td>    
+                    <asp:Label ID="lblStart" runat="server" Text='<%# Eval("SESS_START") %>' />
+                    <asp:Label ID="lblEnd" runat="server" Text='<%# Eval("SESS_END") %>' />
                 </td>
                 <td>
-                    <asp:Label ID="lblLastname" runat="server" Text='<%# Eval("product") %>' />
-                </td>
-                <td>
-                   <%-- <asp:Label ID="lblEmail" runat="server" Text='<%# Eval("amt") %>' />--%>
+                    <asp:Label ID="lblEmail" runat="server" Text='<%# Eval("SESS_DATE") %>' />
                 </td>
                 <th >
                     <center>
